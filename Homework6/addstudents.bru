@@ -1,0 +1,19 @@
+meta {
+  name: addstudents
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://demo-api.siit.ro/api/students
+  body: json
+  auth: bearer
+}
+
+body:json {
+  {
+      "name": "Vlad Cusnir",
+      "email": "vladddd@vvvvv.com",
+      "phone": "+420070000000"
+  }
+}
